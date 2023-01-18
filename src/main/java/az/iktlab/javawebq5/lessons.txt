@@ -1,0 +1,36 @@
+1)	Welcome to new world of the Java and Spring Boot
+
+1. Introduction to Java EE +
+2. General concept of Java EE +
+3. What is Spring +
+4. How to learn Spring +
+5. How to use Spring +
+6. Generate new Spring boot application +
+7. How to use Postman +
+8. Java configuration and the Spring application context +
+
+2)	Java and Web
+1.	What is HTTP +
+2.	HTTP methods +
+3.	Get, Post, Put, Patch, Delete +
+4.	Data formats +
+5.	What is JSON and XML  +
+6.	What is REST +
+7.	Restful web services +
+8.	Rest API +
+9.	What is SOAP +
+10.	Difference between REST and SOAP +
+
+3)	Spring and annotation love
+1.	What is Jakson
+2.	What is ObjectMapper
+3.	@Controller and @RestController +
+4.	@RequestMapping +
+5.	@RequestParameter +
+6.	@PathVariable +
+7.	@RequestBody +
+8.	@GetMapping +
+9.	@PostMapping +
+10.	@PutMapping +
+11.	@PatchMapping +
+12.	@DeleteMapping +
