@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +20,14 @@ import java.util.List;
 public class HelloSpringController {
 
     private static final List<Person> people = new ArrayList<>();
+
+    @PostConstruct
+    public void loadPeople() {
+        people.add(Person.builder().id(1).name("Shahana").surname("Lva").age(1).build());
+        people.add(Person.builder().id(2).name("Mehman").surname("Bv").age(3).build());
+        people.add(Person.builder().id(3).name("Ali").surname("Mv").age(92).build());
+        people.add(Person.builder().id(4).name("Rashid").surname("Oli").age(129).build());
+    }
 
     @GetMapping
     public List<Person> getHello() {

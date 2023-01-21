@@ -34,3 +34,20 @@
 10.	@PutMapping +
 11.	@PatchMapping +
 12.	@DeleteMapping +
+
+4)	Spring and mini world
+1.	What is Spring container +
+2.	Spring application context +
+3.	Spring @Bean and scopes +
+4.	EJB bean and scopes +
+5.	@Spring vs EJB +
+6.	What is Lombok +
+7.	@Getter and @Setter +
+8.	@NoArgConstructor +
+        @AllArgsConstructor +
+        @RequiredArgConstructor +
+9.	@Data +
+10.	@Equals and @Hashcode +
+11.	@ToString +
+12.	@Builder +
+13.	@PostConstructor +
