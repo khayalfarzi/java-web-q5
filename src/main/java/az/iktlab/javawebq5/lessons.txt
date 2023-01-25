@@ -57,7 +57,7 @@
 2.	What is design pattern +
 3.	Facade Design pattern +
 4.	Factory design pattern +
-5.	Builder design pattern
+5.	Builder design pattern +
 6.	Abstract Factory design pattern
 7.	Prototype design pattern
 8.	Singleton design pattern
