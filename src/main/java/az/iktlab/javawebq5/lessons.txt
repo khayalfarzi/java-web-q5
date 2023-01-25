@@ -51,3 +51,18 @@
 11.	@ToString +
 12.	@Builder +
 13.	@PostConstructor +
+
+5)	Today is Pattern day
+1.	Design Patterns +
+2.	What is design pattern +
+3.	Facade Design pattern +
+4.	Factory design pattern +
+5.	Builder design pattern
+6.	Abstract Factory design pattern
+7.	Prototype design pattern
+8.	Singleton design pattern
+9.	DAO (Data Access Object) design pattern
+10.	DTO (Data Transfer Object) design pattern
+11.	MVC (Model View and Controller) design pattern
+12.	Dependency Injection design pattern
+13.	Inversion of Control
