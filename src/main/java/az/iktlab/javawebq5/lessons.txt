@@ -58,9 +58,9 @@
 3.	Facade Design pattern +
 4.	Factory design pattern +
 5.	Builder design pattern +
-6.	Abstract Factory design pattern
-7.	Prototype design pattern
-8.	Singleton design pattern
+6.	Abstract Factory design pattern +
+7.	Prototype design pattern +
+8.	Singleton design pattern +
 9.	DAO (Data Access Object) design pattern
 10.	DTO (Data Transfer Object) design pattern
 11.	MVC (Model View and Controller) design pattern
