@@ -61,8 +61,19 @@
 6.	Abstract Factory design pattern +
 7.	Prototype design pattern +
 8.	Singleton design pattern +
-9.	DAO (Data Access Object) design pattern
-10.	DTO (Data Transfer Object) design pattern
-11.	MVC (Model View and Controller) design pattern
-12.	Dependency Injection design pattern
-13.	Inversion of Control
+9.	DAO (Data Access Object) design pattern +
+10.	DTO (Data Transfer Object) design pattern +
+11.	MVC (Model View and Controller) design pattern +
+12.	Dependency Injection design pattern +
+13.	Inversion of Control +
+
+1.	What is @Component +
+2.	What is @Configuration +
+3.	What is AutoConfiguration
+4.	@Autowired +
+5.	JPA intro +
+6.	JPA (application properties)
+7.	JPA and Hibernate
+8.	JPA structure and architecture
+9.	Spring data
+

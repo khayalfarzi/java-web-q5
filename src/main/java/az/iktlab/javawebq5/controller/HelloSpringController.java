@@ -1,6 +1,8 @@
 package az.iktlab.javawebq5.controller;
 
 import az.iktlab.javawebq5.model.Person;
+import az.iktlab.javawebq5.service.HelloSpringService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +21,12 @@ import java.util.List;
 public class HelloSpringController {
 
     private static final List<Person> people = new ArrayList<>();
+
+    private HelloSpringService service;
+
+    public HelloSpringController(HelloSpringService service) {
+        this.service = service;
+    }
 
     @PostConstruct
     public void loadPeople() {

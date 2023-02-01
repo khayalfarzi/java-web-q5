@@ -1,5 +1,7 @@
 package az.iktlab.javawebq5;
 
+import az.iktlab.javawebq5.controller.HelloSpringController;
+import az.iktlab.javawebq5.service.HelloSpringService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +15,9 @@ public class JavaWebQ5Application {
 
     public static void main(String[] args) {
         SpringApplication.run(JavaWebQ5Application.class, args);
+
+        HelloSpringService service = new HelloSpringService();
+        HelloSpringController controller = new HelloSpringController(service);
     }
 
     @PostConstruct
