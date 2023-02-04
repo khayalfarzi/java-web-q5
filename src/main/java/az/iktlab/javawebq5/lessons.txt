@@ -67,13 +67,31 @@
 12.	Dependency Injection design pattern +
 13.	Inversion of Control +
 
+6)	Data is everywhere…
 1.	What is @Component +
 2.	What is @Configuration +
 3.	What is AutoConfiguration
 4.	@Autowired +
 5.	JPA intro +
-6.	JPA (application properties)
-7.	JPA and Hibernate
-8.	JPA structure and architecture
-9.	Spring data
+6.	JPA (application properties) +
+7.	JPA and Hibernate +
+8.	JPA structure and architecture +
+9.	Spring data +
 
+7)	How many annotation we can save in our local machine (brain)?
+1.	@Entity +
+2.	@Table +
+3.	@Id +
+4.	@GeneratedValue +
+5.	@Column +
+6.	@Enumerated +
+7.	@CreationTimeStamp +
+8.	@UpdateTimeStamp +
+9.	Foreign key
+10.	Relational Mappings
+11.	OTM
+12.	MTO
+13.	OTO
+14.	MTM
+15.	@JoinTable
+16.	@JoinColumn
