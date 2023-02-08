@@ -87,11 +87,11 @@
 6.	@Enumerated +
 7.	@CreationTimeStamp +
 8.	@UpdateTimeStamp +
-9.	Foreign key
-10.	Relational Mappings
-11.	OTM
-12.	MTO
-13.	OTO
-14.	MTM
-15.	@JoinTable
-16.	@JoinColumn
+9.	Foreign key +
+10.	Relational Mappings +
+11.	OTM (One to Many / birin coxa) +
+12.	MTO (Many to one / coxun bire) +
+13.	OTO (One to one / birin bire) +
+14.	MTM (Many to many / coxun coxa) +
+15.	@JoinTable +
+16.	@JoinColumn +
