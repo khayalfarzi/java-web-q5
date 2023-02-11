@@ -1,6 +1,5 @@
 package az.iktlab.javawebq5.controller;
 
-import az.iktlab.javawebq5.entity.PersonEntity;
 import az.iktlab.javawebq5.model.PersonDto;
 import az.iktlab.javawebq5.service.PersonService;
 import org.springframework.web.bind.annotation.DeleteMapping;

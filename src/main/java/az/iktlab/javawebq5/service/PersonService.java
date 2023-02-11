@@ -1,8 +1,8 @@
 package az.iktlab.javawebq5.service;
 
-import az.iktlab.javawebq5.entity.PersonEntity;
+import az.iktlab.javawebq5.dao.entity.PersonEntity;
 import az.iktlab.javawebq5.model.PersonDto;
-import az.iktlab.javawebq5.repository.PersonRepository;
+import az.iktlab.javawebq5.dao.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

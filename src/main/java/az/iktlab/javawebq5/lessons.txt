@@ -95,3 +95,11 @@
 14.	MTM (Many to many / coxun coxa) +
 15.	@JoinTable +
 16.	@JoinColumn +
+
+8)	Can you imagine the holidays without salad? This is same thing for Spring boot and CSR
+1.	@Repository +
+2.	@Service +
+3.	CSR (Controller – Service - Repository) +
+4.	Rest template +
+5.	Feign client +
+6.  @Mapper +

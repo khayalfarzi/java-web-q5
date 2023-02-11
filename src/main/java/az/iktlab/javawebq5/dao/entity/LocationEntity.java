@@ -1,4 +1,4 @@
-package az.iktlab.javawebq5.entity;
+package az.iktlab.javawebq5.dao.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,7 +11,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
 
@@ -19,22 +18,22 @@ import java.time.LocalDateTime;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "account")
-public class AccountEntity {
+@Table(name = "location")
+public class LocationEntity {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "password")
-    private String password;
+    @Column(name = "street")
+    private String street;
 
-    @Column(name = "username")
-    private String username;
+    @Column(name = "postal_code")
+    private String postalCode;
 
-    @Column(name = "account_name")
-    private String accountName;
+    @Column(name = "address")
+    private String address;
 
     @CreationTimestamp
     @Column(name = "created_at")
@@ -43,5 +42,4 @@ public class AccountEntity {
     @UpdateTimestamp
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
-
 }

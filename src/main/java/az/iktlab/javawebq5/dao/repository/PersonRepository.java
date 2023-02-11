@@ -1,6 +1,6 @@
-package az.iktlab.javawebq5.repository;
+package az.iktlab.javawebq5.dao.repository;
 
-import az.iktlab.javawebq5.entity.PersonEntity;
+import az.iktlab.javawebq5.dao.entity.PersonEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

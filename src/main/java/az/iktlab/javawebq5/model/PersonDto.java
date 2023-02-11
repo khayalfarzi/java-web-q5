@@ -1,6 +1,7 @@
 package az.iktlab.javawebq5.model;
 
-import az.iktlab.javawebq5.entity.Gender;
+import az.iktlab.javawebq5.dao.entity.Gender;
+import az.iktlab.javawebq5.dao.entity.PersonEntity;
 import lombok.Builder;
 import lombok.Data;
 
@@ -8,7 +9,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
- * A DTO for the {@link az.iktlab.javawebq5.entity.PersonEntity} entity
+ * A DTO for the {@link PersonEntity} entity
  */
 @Data
 @Builder
