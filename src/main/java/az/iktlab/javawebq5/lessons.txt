@@ -103,3 +103,8 @@
 4.	Rest template +
 5.	Feign client +
 6.  @Mapper +
+
+12)	I am Human and sometimes I can forget 
+1.	Logging +
+2.	Swagger +
+3.	liquibase

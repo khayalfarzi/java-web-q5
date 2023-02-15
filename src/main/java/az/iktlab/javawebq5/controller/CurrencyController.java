@@ -2,6 +2,7 @@ package az.iktlab.javawebq5.controller;
 
 import az.iktlab.javawebq5.client.model.Valute;
 import az.iktlab.javawebq5.service.CurrencyService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,8 @@ public class CurrencyController {
     }
 
     @GetMapping
+    @Operation(summary = "Get currencies from CBAR",
+            description = "This endpoint help us to get currencies from CBAR client")
     public List<Valute> getCurrencies() {
 
         return service.getCurrencies();
