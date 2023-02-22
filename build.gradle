@@ -47,6 +47,14 @@ dependencies {
 
     // docs
     implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+    // security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.security:spring-security-test'
+
+    //  Temporary explicit version to fix Thymeleaf bug
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
+
 }
 
 tasks.named('test') {

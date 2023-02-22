@@ -104,6 +104,20 @@
 5.	Feign client +
 6.  @Mapper +
 
+
+9)	Because everyone who is new to programming wants to be a hacker
+1.	Spring Security +
+2.	Configure Spring Security for HTTP BASIC authentication
+3.	Implement form-based authentication
+4.	Configure other authentication features including remember-me, anonymous users, and logout
+5.	Apply authorization constraints to URLs and URL patterns
+6.	Bind authorization roles to user accounts in relational databases
+7.	Plug application-specific user realms into Spring Security by implementing UserDetailsService
+8.	Implement application-specific authorization constraints as AccessDecisionVoters
+9.	Fix authorization constraints over individual methods of service beans, in lieu of URL authorization or in tandem with it
+10.	Bearer tokens
+11.	JWT
+
 12)	I am Human and sometimes I can forget 
 1.	Logging +
 2.	Swagger +
