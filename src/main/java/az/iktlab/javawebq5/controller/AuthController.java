@@ -30,7 +30,7 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
-    public MessageResponse registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
-        return authService.registerUser(signUpRequest);
+    public void registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
+        authService.registerUser(signUpRequest);
     }
 }

@@ -7,10 +7,11 @@ import az.iktlab.javawebq5.dao.repository.RoleRepository;
 import az.iktlab.javawebq5.dao.repository.UserRepository;
 import az.iktlab.javawebq5.model.JwtResponse;
 import az.iktlab.javawebq5.model.LoginRequest;
-import az.iktlab.javawebq5.model.MessageResponse;
 import az.iktlab.javawebq5.model.SignupRequest;
 import az.iktlab.javawebq5.security.JwtUtils;
 import az.iktlab.javawebq5.security.UserDetailsImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -27,6 +28,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class AuthService {
+
+    private final static Logger log = LoggerFactory.getLogger(AuthService.class);
     @Autowired
     AuthenticationManager authenticationManager;
     @Autowired
@@ -61,16 +64,16 @@ public class AuthService {
                 roles);
     }
 
-    public MessageResponse registerUser(SignupRequest signUpRequest) {
+    public void registerUser(SignupRequest signUpRequest) {
+        log.info("Register user start");
 
         if (userRepository.existsByUsername(signUpRequest.getUsername())) {
-            return new MessageResponse("Error: Username is already taken!");
+            throw new RuntimeException("Error: Username is already taken!");
         }
 
-        if (userRepository.existsByEmail(signUpRequest.getEmail())) {
-            return new MessageResponse("Error: Email is already in use!");
+        if (signUpRequest.getPassword().length() < 5) {
+            throw new RuntimeException("Error: Password length must be more than 5!!!");
         }
-
         // Create new user's account
         User user = User.builder()
                 .email(signUpRequest.getEmail())
@@ -108,6 +111,6 @@ public class AuthService {
         }
         user.setRoles(roles);
         userRepository.save(user);
-        return new MessageResponse("User registered successfully!");
+        log.info("Register user end");
     }
 }
