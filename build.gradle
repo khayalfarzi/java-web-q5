@@ -55,6 +55,11 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'javax.validation:validation-api:2.0.1.Final'
+
+    // liquibase
+    implementation('org.liquibase:liquibase-core') {
+        exclude group: 'org.apache.ant', module: 'ant'
+    }
 }
 
 tasks.named('test') {

@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create account table for store account details
+      author: Khayal Farziyev
+      preConditions:
+        onFail: MARK_RAN
+        not:
+          tableExists:
+            tableName: account
+      changes:
+        - createTable:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: password
+                  type: varchar (20)
+              - column:
+                  name: username
+                  type: varchar
+              - column:
+                  name: account_name
+                  type: varchar
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValue: now()
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  defaultValue: now()
+                  constraints:
+                    nullable: false
+            remarks: Table for store account table

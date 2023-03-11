@@ -6,6 +6,8 @@ server:
 #    root: DEBUG
 
 spring:
+  liquibase:
+    change-log: classpath:/liquibase/changelog-master.yml
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher

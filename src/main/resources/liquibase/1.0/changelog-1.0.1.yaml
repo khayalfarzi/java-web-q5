@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: Update account name where id equals 1
+      author: Khayal Farziyev
+      preConditions:
+        onFail: MARK_RAN
+      changes:
+        - sql:
+            sql: UPDATE account SET account_name = 'normal account' WHERE id = 1;
